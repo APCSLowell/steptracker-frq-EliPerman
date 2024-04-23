@@ -4,7 +4,7 @@ public class StepTracker
  private int min;
  private ArrayList<Integer> log;
  
- public StepTracket(int MIN){
+ public StepTracker(int MIN){
   min = MIN;
   log = new ArrayList<Integer>();
  }
