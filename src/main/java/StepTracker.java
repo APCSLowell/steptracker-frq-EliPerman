@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 public class StepTracker
 {
- private int min;
  private ArrayList<Integer> log;
- 
+ private int min;
+
  public StepTracker(int minimum){
   min = minimum;
   log = new ArrayList<Integer>();
@@ -21,6 +21,7 @@ public class StepTracker
  }
 
  public double averageSteps(){
+  if (log.size() == 0) return 0;
   double total = 0;
   for (int day : log)
    total += day;
