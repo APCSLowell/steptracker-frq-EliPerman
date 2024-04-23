@@ -16,7 +16,7 @@ public class StepTracker
  public int activeDays(){
   int count = 0;
   for (int day : log)
-   if (day > min) count++;
+   if (day >= min) count++;
   return count;
  }
 
